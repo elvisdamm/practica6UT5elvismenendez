@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        .header {
+            padding: 10px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            font-size: 20px;
+            width: 100%;
+            height: 200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+
+        }
+        .content {
+            padding: 40px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1abc9c;
+            color: white;
+            width: 100%;
+            height: 200px;
+            text-decoration: none;
+            display: block;
+        }
+        body{
+            font-family: 'Trebuchet MS';
+        }
+    </style>
+</head>
+<div class="header">
+    <a href="index.html"><img src="imagenes/logo.png" id="logo" width="80" alt="logo"></a>
+    <h1>Diseño Interfaces Web</h1>
+    <p>Elvis Daniel Menéndez Muñiz</p>
+
+</div>
+
+<body>
+    <section class="container">
+
+        <div class="sidebar">
+            <ul>
+                <li class="sub" id="home">
+                    <a href="index.html">Home</a>
+                </li>
+                <li><a href="planificacion.html">Planificacion</a>
+
+                </li>
+
+                <li><a href="accesibilidad.html">Accesibilidad</a>
+
+                </li>
+
+                <li><a href="usabilidad.html">Usabilidad</a>
+
+                </li>
+
+                <li><a href="propiedad.html">Propiedad Intelectual</a>
+
+                </li>
+                <li><a href="imagenes.html">Imagenes</a>
+
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>PLANIFICACIÓN INTERFACES WEB</h1>
+            <br>
+            <h2>Elementos básicos de una interfaz web</h2>
+            <br>
+            <h3>Color</h3>
+            <br>
+            <b>Modelo RGB:</b></br>
+            <p>
+                Es un modelo de color basado en la síntesis aditiva, con el que es posible representar un color
+                mediante la mezcla por adición de los tres colores de luz primarios.
+                En código HTML por ejemplo, para representar los distintos colores existe un código formado
+                por tres números separados que pueden tomar valores desde el 0 hasta el 255 “[xxx], [xxx],
+                [xxx]”, esto forma un total de 24 bits en binario. Cada uno de estos números representa uno
+                de los colores siendo [R],[G],[B].</p>
+
+            <br>
+            <img src="imagenes/rgb.PNG">
+            <br>
+            <b>Modelo HSL:</b></br>
+            <p>
+                Es un modelo de color cilíndrico, por el modo de representar gráficamente las coordenadas de
+                su gama de colores en contraposición al modelo cúbico RGB.
+                Se compone de tres canales:
+            </p>
+            <br>
+            <p>
+                • H (Hue): Traducido como tonalidad representa los colores primarios con todos los
+                matices entre ellos. Los valores de tono se refieren mediante su posición en el círculo
+                cromático. Queda normalizado que el rojo primario se sitúa a 0º, el verde primario a
+                120º y el azul primario a 240º, volviendo al rojo cuando regresamos al origen.
+            </p>
+            <br>
+            <p>
+                • L (Lightness): Traducido como luminosidad. El valor máximo de luminosidad de
+                cualquier color es el blanco. El valor mínimo será el negro. El rango de valores de este
+                canal se suele referir como un porcentaje: 0% luminosidad mínima (negro) y 100%
+                luminosidad máxima (blanco).
+                La luminosidad es la coordenada que representa la posición de un color en la altura del
+                cilindro.
+            </p>
+            <br>
+            <p>
+                • S (Saturation): Traducido como saturación. Representa la cantidad de color. De tal
+                manera que si cualquier color pierde saturación tiende hacia el gris. Si la gana, se aleja
+                de él. Al igual que la luminosidad, este canal se suele representar como un porcentaje
+                o un rango de valores entre 0 y 1.
+                La saturación es la coordenada que representa la posición de un color en el radio del
+                cilindro.
+            </p>
+            <br>
+            <img src="imagenes/hsl.PNG">
+            <br>
+            <h3>Unidades de medida relativa y absoluta. Pros y contra</h3><br>
+
+            <b>Unidades Absolutas</b><br><br>
+            <p>
+                Una medida indicada mediante unidades absolutas está completamente definida, ya que su
+                valor no depende de otro valor de referencia.
+                <br><br>
+                • in, pulgadas ("inches", en inglés). Una pulgada equivale a 2.54 centímetros.<br>
+                • px, (píxel) relativa respecto de la resolución de la pantalla del dispositivo en el que se
+                visualiza la página HTML.<br>
+                • cm, centímetros.<br>
+                • mm, milímetros.<br>
+                • pt, puntos. Un punto equivale a 1 pulgada/72, es decir, unos 0.35 milímetros.<br><br>
+                La principal ventaja de las unidades absolutas es que su valor es directamente el valor que se
+                debe utilizar, sin necesidad de realizar cálculos intermedios. Su principal desventaja es que son
+                muy poco flexibles y no se adaptan fácilmente a los diferentes medios.<br>
+            </p><br>
+            <b>Unidades Relativas</b><br><br>
+            <p>
+                La unidades relativas, a diferencia de las absolutas, no están completamente definidas, ya que
+                su valor siempre está referenciado respecto a otro valor. A pesar de su aparente dificultad, son
+                las más utilizadas en el diseño web por la flexibilidad con la que se adaptan a los diferentes
+                medios.<br><br>
+                • em, relativa respecto del tamaño de letra del elemento.<br>
+                • ex, relativa respecto de la altura de la letra x ("equis minúscula") del tipo y tamaño de
+                letra del elemento.<br>
+                • %. Se define respecto del ancho disponible. Por ejemplo el ancho del contenedor que
+                atrapa una capa. Es común que a esta capa de «orden superior» se le aplique un ancho
+                fijo. Normalmente en píxeles.<br>
+                • rem, muy parecida al em pero en lugar de ser en base al font-size del elemento es en
+                base al font-size del elemento root.<br><br>
+                La gran ventaja de las unidades relativas es que siempre mantienen las proporciones
+                del diseño de la página. Establecer el margen de un elemento con el valor
+                1em equivale a indicar que el margen del elemento debe ser del mismo tamaño que su
+                letra y debe cambiar proporcionalmente.
+            </p>
+            <br>
+            <h3>Estructura de una pagina</h3><br>
+            <img src="imagenes/estructura.PNG"><br>
+            <b>Cabecera</b><br><br>
+            <p>
+                La cabecera es la parte superior de la página web. En ella se encuentra la información
+                básica de la empresa o marca y es consistente en todo el sitio, es decir, se repite en
+                cada página de la web que visitamos.<br><br>
+                Los elementos que normalmente se encuentran en la cabecera son:<br>
+                • Logo de la empresa<br>
+                • El menú de navegación<br>
+                • Un cuadro de búsqueda<br>
+                • Una pequeña descripción de la web<br>
+            </p>
+            <img src="imagenes/cabecera.PNG"><br>
+            <b>Sistemas de navegación</b><br><br>
+            <p>
+                Los sistemas de navegación son los elementos de una interfaz que permiten la
+                navegación por las diferentes secciones y páginas que componen el sitio web.
+                Generalmente se presentan como menús formados por diferentes opciones, con las
+                que el usuario puede interaccionar; al hacer click sobre cada una de ellas es cargada
+                una página o sección de la misma.
+                Pueden conformarse por varios elementos como son: gráficos, barras de menús
+                horizontales y verticales y menús emergentes
+            </p><br>
+            <b>Cuerpo</b><br><br>
+            <p>
+                Es la parte de la web que alberga el contenido principal de tu página. Esta parte sí es
+                diferente en cada página de tu sitio. Es decir, no será el mismo contenido el que
+                incluyes en tu página de contacto que en la página principal.<br>
+            </p><br>
+            <b>Pie de página</b><br><br>
+            <p>
+                El pie de página o footer es la parte inferior de una página web. Al igual que la
+                cabecera, se repite y es consistente en cada página. Además, también incluye
+                elementos básicos como:<br><br>
+                • Menú simplificado<br>
+                • Información de contacto<br>
+                • Botones de redes sociales<br>
+                • Logo de la empresa<br>
+                • Enlace a la política de privacidad<br>
+            </p>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <footer>
+        <p><a href="mailto:elvisdaniel.menendezm@gmail.com">elvisdaniel.menendezm@gmail.com</a></p>
+        <img src="" alt="">
+    </footer>
+
+    <script src="scripts/title.js"></script>
+</body>
+
+</html>
