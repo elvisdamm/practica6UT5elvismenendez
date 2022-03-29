@@ -15,5 +15,12 @@ Varias páginas HTML con todo el contenido del sitio y varias carpetas con image
 
 ### Finalidad del repositorio
 La finalidad de este repositorio es ir creando copias de seguridad y tener un controlador de versiones
+
+
+
+
+
+### Imagen
 ![descarga](https://user-images.githubusercontent.com/98460587/160684530-509552a6-f763-42ee-b05d-0ba664853228.png)
+### Link
 https://w7.pngwing.com/pngs/40/470/png-transparent-computer-icons-agenda-icon-text-rectangle-share-icon.png
